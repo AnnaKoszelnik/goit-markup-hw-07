@@ -357,11 +357,11 @@ body {
   padding-top: 9px;
 }
 
-.icons-clients {
+.clients-section__list {
   display: flex;
   justify-content: space-between;
 }
-.clients-svg {
+.clients-section__icons {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 15px 31px;
@@ -369,8 +369,8 @@ body {
   transition-property: background-color;
 }
 
-.clients-svg:hover,
-.clients-svg:focus {
+.clients-section__icons:hover,
+.clients-section__icons:focus {
   border: 1px solid var(--hover-color);
   cursor: pointer;
   fill: var(--hover-color);
