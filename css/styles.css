@@ -31,9 +31,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.logo--blue {
   color: var(--hover-color);
 }
 
@@ -41,7 +38,7 @@ body {
   color: #000000;
 }
 
-.logo-white {
+.logo--white {
   color: #ffffff;
 }
 
@@ -325,7 +322,7 @@ body {
   padding-bottom: 60px;
 }
 
-.logo-footer {
+.footer__logo {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
@@ -334,7 +331,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address {
+.footer__address {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -343,13 +340,13 @@ body {
   color: #ffffff;
 }
 
-.list {
+.footer__list {
   list-style-type: none;
   padding-left: 0;
   padding-top: 20px;
   margin: 0;
 }
-.info-footer {
+.footer__link {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -404,7 +401,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-so-me {
+.footer__so-me-title {
   font-family: "roboto";
   font-weight: 700;
   font-size: 14px;
@@ -418,11 +415,11 @@ body {
   align-items: baseline;
 }
 
-.footer-social-links {
+.footer__social-links {
   margin-left: 70px;
 }
 
-.footer-icons {
+.footer__icons--active {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -433,16 +430,16 @@ body {
   transition-property: background-color;
 }
 
-.footer-icons:hover,
-.footer-icons:focus,
-.footer-icons:active {
+.footer__icons--active:hover,
+.footer__icons--active:focus,
+.footer__icons--active:active {
   background-color: var(--hover-color);
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-media-icons {
+.footer__so-me-elements {
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -531,6 +528,7 @@ body {
   position: relative;
   top: 29px;
 }
+
 .link--active {
   color: var(--hover-color);
 }
@@ -664,7 +662,7 @@ body {
   background-image: url("./images/modal.svg#icon-person");
 }
 
-.newsletter-button {
+.newsletter__button {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -687,7 +685,7 @@ body {
   margin-left: 78px;
 }
 
-.newsletter-input {
+.newsletter__input {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -707,11 +705,11 @@ body {
   padding-left: 16px;
 }
 
-.newsletter-form {
+.newsletter__form {
   margin-top: 20px;
 }
 
-.send-icon {
+.button__icon {
   position: absolute;
   fill: #ffffff;
   bottom: 11px;
