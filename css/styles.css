@@ -18,7 +18,7 @@ body {
   padding: 94px 0;
 }
 
-.page-header {
+.header {
   display: flex;
   align-items: center;
   height: 80px;
@@ -33,11 +33,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-blue {
+.logo--blue {
   color: var(--hover-color);
 }
 
-.logo-black {
+.logo--black {
   color: #000000;
 }
 
@@ -74,7 +74,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-color {
+.link--color {
   color: var(--second-color);
 }
 
@@ -391,14 +391,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-icons {
+.nav__icons {
   fill: var(--second-color);
   transition-property: fill;
 }
 
-.nav-icons:hover,
-.nav-icons:active,
-.nav-icons:focus {
+.nav__icons:hover,
+.nav__icons:active,
+.nav__icons:focus {
   fill: var(--hover-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -520,7 +520,7 @@ body {
   top: 0.5em;
 }
 
-.underline-1::after {
+.menu__underline-1::after {
   display: block;
   content: "";
   width: 53px;
@@ -531,11 +531,11 @@ body {
   position: relative;
   top: 29px;
 }
-.is-active {
+.link--active {
   color: var(--hover-color);
 }
 
-.underline-2::after {
+.menu__underline-2::after {
   display: block;
   content: "";
   width: 58px;
