@@ -75,7 +75,7 @@ body {
   color: var(--second-color);
 }
 
-.title-1 {
+.section__image {
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4) 0%,
@@ -89,7 +89,7 @@ body {
   margin: 0 auto;
 }
 
-.title {
+.section__title {
   font-family: "roboto";
   font-weight: 900;
   font-size: 44px;
@@ -103,7 +103,7 @@ body {
   margin-top: 106px;
 }
 
-.button1 {
+.section__button {
   display: flex;
   margin: auto;
   background-color: #2196f3;
@@ -119,26 +119,26 @@ body {
   margin-bottom: 106px;
 }
 
-.button1:hover,
-.button1:focus,
-.button1:active {
+.section__button:hover,
+.section__button:focus,
+.section__button:active {
   cursor: pointer;
 }
 
-.cards-item {
+.section__cards {
   display: flex;
   flex-basis: 270px;
   column-gap: 30px;
 }
 
-.icon {
+.section__cards-icon {
   background-color: #f5f4fa;
   border-radius: 4px;
   display: block;
   padding: 25px 100px;
 }
 
-.subtitle {
+.section__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -148,7 +148,7 @@ body {
   margin: 30px 0 10px;
 }
 
-.description {
+.section__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -156,7 +156,7 @@ body {
   margin: 0;
 }
 
-.subtitle-second-1 {
+.what-we-do-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.19;
@@ -171,7 +171,8 @@ body {
   background: #f5f4fa;
 }
 
-.subtitle-second-2 {
+.team-section__title,
+.clients-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.19;
@@ -182,13 +183,13 @@ body {
   margin-top: 0;
 }
 
-.images {
+.what-we-do-section__images {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.label {
+.what-we-do-section__labels {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -203,12 +204,12 @@ body {
   top: 224px;
 }
 
-.images-2 {
+.team-section__images {
   display: flex;
   justify-content: space-between;
 }
 
-.team-cards {
+.team-section__cards {
   margin: 0;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -216,11 +217,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-cards-description {
+.team-cards__list {
   padding: 16px 32px 18px;
 }
 
-.member-name {
+.team-cards__titles {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -230,7 +231,7 @@ body {
   padding-bottom: 10px;
 }
 
-.position {
+.team-cards__description {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -446,7 +447,7 @@ body {
   margin-top: 20px;
 }
 
-.team-so-me-icons {
+.team-cards__icons {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -455,16 +456,16 @@ body {
   transition-property: background-color;
 }
 
-.team-so-me-links {
+.team-cards__links {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 16px 0 0 0;
 }
 
-.team-so-me-icons:hover,
-.team-so-me-icons:focus,
-.team-so-me-icons:active {
+.team-cards__icons:hover,
+.team-cards__icons:focus,
+.team-cards__icons:active {
   border-radius: 50%;
   background-color: var(--hover-color);
   fill: #ffffff;
@@ -494,7 +495,7 @@ body {
   transition: transform 500ms ease-in-out;
 }
 
-.window {
+.modal__window {
   width: 528px;
   height: 581px;
   background-color: #ffffff;
@@ -504,7 +505,7 @@ body {
   position: relative;
 }
 
-.close-button {
+.modal__close-button {
   width: 30px;
   height: 30px;
   padding: 6px;
@@ -575,7 +576,7 @@ body {
   padding: 49px 45px 49px 24px;
 }
 
-.signup-button {
+.form__button {
   position: absolute;
   font-style: normal;
   font-weight: 700;
@@ -596,7 +597,7 @@ body {
   left: 164px;
 }
 
-.signup-title {
+.form__title {
   position: absolute;
   font-style: normal;
   font-weight: 700;
@@ -608,24 +609,24 @@ body {
   left: 70px;
 }
 
-.signup-form {
+.form__items {
   position: absolute;
   bottom: 164px;
   left: 40px;
 }
 
-.signup-terms {
+.form__signup-terms {
   position: absolute;
   bottom: 120px;
   right: 40px;
   color: var(--second-color);
 }
 
-.signup-checkbox {
+.form__checkbox {
   appearance: none;
 }
 
-.signup-terms::before {
+.form__signup-terms::before {
   display: block;
   position: absolute;
   top: 2px;
@@ -636,7 +637,11 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
 }
 
-.signup-checkbox:checked + .signup-terms::before {
+.form--link {
+  color: var(--hover-color);
+}
+
+.form__checkbox:checked + .form__signup-terms::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
   background-size: 11px 8px;
   background-position: 3px 4px;
@@ -647,7 +652,7 @@ body {
   transition: transform 250ms cubic-bezier(0.2, 0, 0.2, 1);
 }
 
-.input {
+.form__input {
   display: block;
   width: 448px;
   height: 40px;
@@ -656,10 +661,6 @@ body {
   margin-bottom: 10px;
   padding-left: 42px;
   outline: none;
-}
-
-.modal-svg-1 {
-  background-image: url("./images/modal.svg#icon-person");
 }
 
 .newsletter__button {
@@ -716,25 +717,25 @@ body {
   right: 24px;
 }
 
-.person-icon {
+.form__person-icon {
   position: absolute;
   top: 30px;
   left: 12px;
 }
 
-.phone-icon {
+.form__phone-icon {
   position: absolute;
   top: 97px;
   left: 12px;
 }
 
-.email-icon {
+.form__email-icon {
   position: absolute;
   top: 166px;
   left: 12px;
 }
 
-.form-labels {
+.form__labels {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -744,7 +745,7 @@ body {
   margin-bottom: 4px;
 }
 
-.form-comment {
+.form__comment {
   resize: none;
   height: 96px;
   font-style: normal;
@@ -755,19 +756,19 @@ body {
   padding: 12px 16px;
 }
 
-.form-comment::placeholder {
+.form__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.newsletter-input::placeholder {
+.newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.newsletter-input:focus {
+.newsletter__input:focus {
   border-color: var(--hover-color);
 }
 
-.form-input:focus-within,
-.input:focus {
+.form__input--active:focus-within,
+.form__input:focus {
   fill: var(--hover-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
