@@ -9,24 +9,24 @@
   margin-top: 0;
 }
 
-.clients-section__icons {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding: 15px 31px;
-  fill: #afb1b8;
-  transition-property: background-color;
-}
-
-.clients-section__icons:hover,
-.clients-section__icons:focus {
-  border: 1px solid $hoverColor;
-  cursor: pointer;
-  fill: $hoverColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .clients-section__list {
   display: flex;
   justify-content: space-between;
+
+  .clients-section__icons {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 15px 31px;
+    fill: #afb1b8;
+    transition-property: background-color;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $hoverColor;
+      cursor: pointer;
+      fill: $hoverColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }

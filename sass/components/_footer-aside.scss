@@ -5,20 +5,20 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
 
-.logo {
-  text-decoration: none;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $hoverColor;
-}
+  .logo {
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $hoverColor;
+  }
 
-.logo--white {
-  color: #ffffff;
+  .logo--white {
+    color: #ffffff;
+  }
 }
 
 .footer__list {
@@ -26,15 +26,15 @@
   padding-left: 0;
   padding-top: 20px;
   margin: 0;
-}
 
-.footer__address {
-  text-decoration: none;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  .footer__address {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
 
 .footer__link {
