@@ -11,13 +11,14 @@
 
 .portfolio__cards {
   transition-property: box-shadow;
-}
-.portfolio__cards:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .portfolio__box {
@@ -25,6 +26,9 @@
   height: 294px;
   position: relative;
   overflow: hidden;
+  &:hover .portfolio__box--overlay {
+    transform: translateY(-100%);
+  }
 }
 
 .portfolio__box--overlay {
@@ -35,19 +39,15 @@
   position: absolute;
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.2, 0, 0.2, 1);
-}
 
-.portfolio__box:hover .portfolio__box--overlay {
-  transform: translateY(-100%);
-}
-
-.portfolio__cards-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  padding: 49px 45px 49px 24px;
+  .portfolio__cards-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 49px 45px 49px 24px;
+  }
 }
 
 .portfolio__cards-description {
@@ -55,21 +55,21 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px;
-}
 
-.portfolio__cards-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-color);
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  .portfolio__cards-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $mainColor;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.portfolio__cards-subtitle {
-  font-size: 16px;
-  line-height: 1.85;
-  letter-spacing: 0.03em;
-  color: var(--second-color);
+  .portfolio__cards-subtitle {
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.03em;
+    color: $secondColor;
+  }
 }

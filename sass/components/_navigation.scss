@@ -6,18 +6,18 @@
   display: flex;
   list-style-type: none;
   padding-left: 0;
-}
 
-.menu__underline-1::after {
-  display: block;
-  content: "";
-  width: 53px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-  margin-left: 46px;
-  position: relative;
-  top: 29px;
+  &__underline-1::after {
+    display: block;
+    content: "";
+    width: 53px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    margin-left: 46px;
+    position: relative;
+    top: 29px;
+  }
 }
 
 .link {
@@ -29,33 +29,33 @@
   color: $mainColor;
   margin-left: 46px;
   transition-property: color;
-}
 
-.link:hover,
-.link:focus,
-.link:active {
-  color: $hoverColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.link--color {
-  color: $secondColor;
-}
+  &--color {
+    color: $secondColor;
+  }
 
-.link--active {
-  color: $hoverColor;
+  &--active {
+    color: $hoverColor;
+  }
 }
 
 .nav__icons {
   fill: $secondColor;
   transition-property: fill;
-}
 
-.nav__icons:hover,
-.nav__icons:active,
-.nav__icons:focus {
-  fill: $hoverColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $hoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

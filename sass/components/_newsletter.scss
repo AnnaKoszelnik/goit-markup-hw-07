@@ -1,18 +1,3 @@
-.newsletter__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.newsletter__input:focus {
-  border-color: var(--hover-color);
-}
-
-.form__input--active:focus-within,
-.form__input:focus {
-  fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: var(--hover-color);
-}
-
 .newsletter__input {
   font-style: normal;
   font-weight: 400;
@@ -31,6 +16,13 @@
   left: -200px;
   outline: none;
   padding-left: 16px;
+
+  &:focus {
+    border-color: $hoverColor;
+  }
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .newsletter__button {
@@ -50,27 +42,27 @@
   padding: 10px 76px 10px 42px;
   position: relative;
   left: 370px;
+
+  .button__icon {
+    position: absolute;
+    fill: #ffffff;
+    bottom: 11px;
+    right: 24px;
+  }
 }
 
 .newsletter {
   margin-left: 78px;
-}
 
-.newsletter__form {
-  margin-top: 20px;
-}
+  .newsletter__form {
+    margin-top: 20px;
 
-.footer__so-me-title {
-  font-family: "roboto";
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.button__icon {
-  position: absolute;
-  fill: #ffffff;
-  bottom: 11px;
-  right: 24px;
+    .footer__so-me-title {
+      font-family: "roboto";
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
 }
