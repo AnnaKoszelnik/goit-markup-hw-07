@@ -8,18 +8,10 @@
     justify-content: flex-start;
     align-items: baseline;
   }
-}
 
-.footer__social-links {
-  margin-left: 70px;
-}
-
-.footer__so-me-title {
-  font-family: "roboto";
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
+  &__social-links {
+    margin-left: 70px;
+  }
 }
 
 .footer__so-me-elements {
@@ -38,13 +30,13 @@
   border-radius: 50%;
   fill: #ffffff;
   transition-property: background-color;
-}
 
-.footer__icons--active:hover,
-.footer__icons--active:focus,
-.footer__icons--active:active {
-  background-color: $hoverColor;
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $hoverColor;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
